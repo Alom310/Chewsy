@@ -9,10 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="main.css">
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
     <title>Chewsy</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
@@ -32,7 +29,7 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light justify-content-between" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between" id="topNavbar">
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
@@ -111,19 +108,20 @@
 
 
     <header id="headwrap">
-        <div id="heading-image"><h1>Chewsy.</h1></div>
-        <img src="#" style="height: 82px; width:392px">
-        <h2>Stop being chewsy about food</h2>
+        <img src="./Assets/CHEWSY_LOGO.png" class="image-fluid" id="logo">
+        <h2 id="logoSlogan">Stop being chewsy about food</h2>
     </header>
 
-    <div class="container" >
-        <div class="row">
-            <div class="col" id="headwrap">
-                <div class="col">Do you have allergies or food sensitivities? An indefatiguable sweet tooth? An appetite that your waist wishes you would curb? One Chewsy metabolizes anything in your stomach! Take two and you can eat for hours!</div>
-                <button type="button" id="SignUpButton" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Sign Up</button>
+    <div class="container hook-content-box" >
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-5 col-6" id="headwrap">
+                <p class="hook">Do you have allergies or food sensitivities? An indefatiguable sweet tooth? An appetite that your waist wishes you would curb? One Chewsy metabolizes anything in your stomach! Take two and you can eat for hours!</p>
+                <button type="button" id="SignUpButton" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModalCenter">Sign Up for a free sample!</button>
+                <div id="SignUpHook">
+                </div>
             </div>
-            <div class="col">
-                <img src="./images/bear_783x985.png" style="height: 367px; width: 292px">
+            <div class="col-lg-5 col-6 mt-auto">
+                <img src="./Assets/Big_Bottle.png" class="image-fluid big-bottle">
             </div>
         </div>
     </div>    
@@ -164,20 +162,21 @@
     </div>
 
     <section>
-        <h2>Featured Products</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="" style="height: 142px; width: 142px">
-                    product
+        <div class="products container">
+                <h2>Featured Products</h2>
+            <div class="row justify-content-center">
+                <div class="col-sm col-lg-3">
+                    <img src="./Assets/blue_bottle_v002.png" class="image-fluid product-bottle">
+                    <button type="button" class="btn btn-outline-secondary btn-block">See more</button>
                 </div>
-                <div class="col">
-                    <img src="#" style="height: 142px; width: 142px">
-                    product
+                <div class="col-sm col-lg-3">
+                    <img src="./Assets/purple_bottle_v002.png" class="image-fluid product-bottle">
+                    <button type="button" class="btn btn-outline-secondary btn-block">See more</button>
                 </div>
-                <div class="col">
-                    <img src="#" style="height: 142px; width: 142px">
-                    product
+                <div class="col-sm col-lg-3">
+                    <img src="./Assets/Pink_bottle_v002.png" class="image-fluid product-bottle">
+                    <button type="button" class="btn btn-outline-secondary btn-block">See more</button>
+
                 </div>
             </div>
         </div>
@@ -211,10 +210,10 @@
         <p>Subscribe to our newsletter and always be the first to hear what is happening.</p>
         <form class="container signup-bottom">
             <div class="row justify-content-center form-group">
-                <input class="col-3 form-control" type="text" placeholder="Enter your email address">
+                <input class="col-8 col-sm-3 form-control" type="text" placeholder="Enter your email address">
             </div>
             <div class="row justify-content-center form-group">
-                <button id="sign-up-bottom" class="col-3 btn btn-primary btn-block form-control">Sign Up</button>
+                <button id="sign-up-bottom" class="col-8 col-sm-3 btn btn-primary btn-block form-control">Sign Up</button>
             </div>
         </form>
         <a href="https://www.facebook.com"><img src="Assets/facebook.png" class="social image-fluid" alt="Facebook"></a>
