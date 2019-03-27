@@ -219,6 +219,9 @@ a{
     color: black;
 }
 
+.fas{
+    color:black;
+}
 .thankyou{
     font-family: "PT Serif Caption";
     font-size: 37px;
@@ -248,8 +251,13 @@ a{
 }
 
 
+@media (max-width: 912px){
+    #navlogo{
+        display: none;
+    }
+}
 
-@media (max-width: 760px){
+@media (max-width: 766px){
     .hook{
         font-size: 12pt;
     }
@@ -293,9 +301,7 @@ a{
         display:flex;
     }
 
-    #navlogo{
-        display: none;
-    }
+    
     #navList{
         flex-direction: row;
     }
@@ -362,10 +368,27 @@ a{
         display: flex;
         flex-direction: column;
     }
+}
 
-    /* #navForm{
-        width: 300px;
-        margin: 0;
-    } */
+@media (max-width: 320px) {
+    #navbar-font {
+        font-size: 14px;
+    }
 
+    #cartImg {
+        width: 25px;
+        height: 25px;
+    }
+
+    #logoSlogan {
+        font-size: 20px;
+    }
+
+    .hook {
+        font-size: 9px;
+    }
+
+    #SignUpButton {
+        font-size: 10px;
+    }
 }
