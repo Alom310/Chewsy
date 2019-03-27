@@ -4,71 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="main.css">
     
     <title>Chewsy</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/js/mdb.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="app.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between" id="navbar">
         <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Cart(0)</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Checkout</a>
-            </li>
+        </button> -->
+        <div class="" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cart(0)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Checkout</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <ul class="nav justify-content-around">
-        <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-        </li>
-    </ul>
+<ul class="nav justify-content-around" id="menu">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+</ul>
 
-    <header>
+<!--Navbar-->
+<nav class="navbar navbar-light lighten-4 justify-content-center" id="smallNavBar">
+    <!-- Collapse button -->
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+            class="fas fa-bars fa-1x"></i></span></button>
+    
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+        </li>
+        </ul>
+        <!-- Links -->
+    
+    </div>
+    <!-- Collapsible content -->
+    
+</nav>
+<!--/.Navbar-->
+
+
+    <header id="headwrap">
         <div id="heading-image"><h1>Chewsy.</h1></div>
         <img src="#" style="height: 82px; width:392px">
         <h2>Stop being chewsy about food</h2>
     </header>
 
-    <div class="container">
+    <div class="container" >
         <div class="row">
-            <div class="col">Do you have allergies or food sensitivities? An indefatiguable sweet tooth? An appetite that your waist wishes you would curb? One Chewsy metabolizes anything in your stomach! Take two and you can eat for hours!</div>
-            <div class="col"><img src="#" style="height: 367px; width: 292px"></div>
+            <div class="col" id="headwrap">
+                <div class="col">Do you have allergies or food sensitivities? An indefatiguable sweet tooth? An appetite that your waist wishes you would curb? One Chewsy metabolizes anything in your stomach! Take two and you can eat for hours!</div>
+                <button type="button" id="SignUpButton" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Sign Up</button>
+            </div>
+            <div class="col">
+                <img src="./images/bear_783x985.png" style="height: 367px; width: 292px">
+            </div>
         </div>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Sign Up</button>
+    </div>    
 <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
