@@ -53,6 +53,7 @@ color: #004d40;
     margin-top: 15px;
 }
 
+
 /* #heroWrap{
     display: flex;
     
@@ -60,6 +61,7 @@ color: #004d40;
 .hook {
     font-size: 18pt;
 }
+
 
 #SignUpButton{
     background-color: #F1959C !important;
@@ -158,11 +160,47 @@ footer p, small{
     margin-bottom: auto;
 }
 
+
+#featured{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#navbar-font{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.nav-item{
+    margin:0 8px;
+}
+
+#cartImg{
+    width: 34px;
+    height:34px;
+}
+
+#navList{
+    flex-direction: row;
+}
+
+#navForm{
+    margin:0;
+}
+
+a{
+    color: black;
+}
+
+
+
 @media (max-width: 760px){
     .hook{
         font-size: 12pt;
     }
 }
+
 
 @media (max-width: 700px) {
     .hook{
@@ -200,6 +238,15 @@ footer p, small{
     #smallNavBar{
         display:flex;
     }
+
+    #navlogo{
+        display: none;
+    }
+    #navList{
+        flex-direction: row;
+    }
+}
+
 
     .product-bottle{
         max-width: 80%;
@@ -242,8 +289,8 @@ footer p, small{
         max-width: 70%;
     }
 
-    #topNavBar{
-        max-width: 100%;
+    #topNavbar{
+        display: block;
     }
 
     #logoSlogan{
@@ -253,4 +300,15 @@ footer p, small{
     #SignUpHook{
         max-height: 120px;
     }
+
+    #products{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* #navForm{
+        width: 300px;
+        margin: 0;
+    } */
+
 }
