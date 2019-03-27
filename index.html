@@ -29,24 +29,25 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light justify-content-between" id="topNavbar">
-        <form class="form-inline my-2 my-lg-0">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-around" id="topNavbar">
+        <div class="col justify-content-end" id="navlogo">
+            <img class="float-right" src="./Assets/header_logo.png">
+        </div>
+        <form class="form-inline my-2 my-lg-0 col justify-content-start order-sm-2" id="navForm">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
         </form>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="" id="navbarSupportedContent">
-            <ul class="navbar-nav ">
+        <div class="col order-sm-1" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-center row" id="navList">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a id="navbar-font" class="nav-link" href="#">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cart(0)</a>
+                    <a id="navbar-font" class="nav-link" href="#"><img id="cartImg" src="./Assets/shopping_cart_trolley_512.png">Cart(0)</a>
+                    
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Checkout</a>
+                    <a id="navbar-font" class="nav-link" href="#">Checkout</a>
                 </li>
             </ul>
         </div>
@@ -54,19 +55,19 @@
 
 <ul class="nav justify-content-around" id="menu">
     <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">New Products</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">All Products</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Best Sellers</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link " href="#">Testimonials</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Contact</a>
     </li>
 </ul>
 
@@ -120,8 +121,10 @@
                 <div id="SignUpHook">
                 </div>
             </div>
+
             <div class="col-lg-5 col-6 mt-auto">
                 <img src="./Assets/Big_Bottle.png" class="image-fluid big-bottle">
+
             </div>
         </div>
     </div>    
@@ -162,6 +165,7 @@
     </div>
 
     <section>
+
         <div class="products container">
                 <h2>Featured Products</h2>
             <div class="row justify-content-center">
