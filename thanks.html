@@ -1,5 +1,154 @@
-<meta http-equiv="refresh" content="5"; URL='https://alom310.github.io/Chewsy'" />
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    <title>Chewsy</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/js/mdb.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="app.js"></script>
+</head>
 <body>
-    <h1>Thanks For Signing Up</h1>
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-around" id="topNavbar">
+        <div class="col justify-content-end" id="navlogo">
+            <a href="https://alom310.github.io/Chewsy"><img class="float-right" src="./Assets/header_logo.png"></a>
+        </div>
+        <form class="form-inline my-2 my-lg-0 col justify-content-start order-sm-2" id="navForm">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button> -->
+        </form>
+        <div class="col order-sm-1" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-center row" id="navList">
+                <li class="nav-item">
+                    <a id="navbar-font" class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a id="navbar-font" class="nav-link" href="#"><img id="cartImg" src="./Assets/shopping_cart_trolley_512.png">Cart(0)</a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a id="navbar-font" class="nav-link" href="#">Checkout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<ul class="nav justify-content-around" id="menu">
+    <li class="nav-item">
+        <a class="nav-link" href="#">NEW PRODUCTS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">ALL PRODUCTS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">BEST SELLERS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="#">TESTIMONIALS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">CONTACT</a>
+    </li>
+</ul>
+
+<!--Navbar-->
+<nav class="navbar navbar-light lighten-4 justify-content-center" id="smallNavBar">
+    <!-- Collapse button -->
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+            class="fas fa-bars fa-1x"></i></span></button>
+    
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+        </li>
+        </ul>
+        <!-- Links -->
+    
+    </div>
+    <!-- Collapsible content -->
+    
+</nav>
+<!--/.Navbar-->
+
+
+    <header id="headwrap">
+        <img src="./Assets/CHEWSY_LOGO.png" class="image-fluid" id="logo">
+        <h2 id="logoSlogan">Stop being chewsy about food</h2>
+    </header>
+
+    <div class="container" >
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-8 thankyou" id="headwrap">
+                <i><h2>Thank you for signing up with us!</h2>
+                <h4>Your free trial and coupons will be emailed shortly!</h4></i>
+                
+            </div>
+
+            <div class="col-4 mt-auto">
+                <img src="./Assets/Gummy_Header_Logo.png" class="image-fluid big-bottle">
+
+            </div>
+        </div>
+    </div>    
+  
+
+    <footer>
+        <img src="Assets/as_seen_in_v03.png" class="image-fluid" id="as-seen-in" alt="As seen in Cosmopolitan, MarieClaire, and The New York Times">
+        <h4>Sign up for our newsletter</h4>
+        <p>Subscribe to our newsletter and always be the first to hear what is happening.</p>
+        <form class="container signup-bottom">
+            <div class="row justify-content-center form-group">
+                <input class="col-8 col-sm-3 form-control" type="text" placeholder="Enter your email address">
+            </div>
+            <div class="row justify-content-center form-group">
+                <button id="sign-up-bottom" class="col-8 col-sm-3 btn btn-primary btn-block form-control">Sign Up</button>
+            </div>
+        </form>
+        <a href="https://www.facebook.com"><img src="Assets/facebook.png" class="social image-fluid" alt="Facebook"></a>
+        <a href="https://www.twitter.com"><img src="Assets/twitter.png" class="social image-fluid" alt="Twitter"></a>
+        <a href="https://www.instagram.com"><img src="Assets/instagram.png" class="social image-fluid" alt="Instagram"></a>
+        <div id="disclaimer">
+            <p><small>&copy; 2019 CHEWSY. All rights reserved. *DISCLAIMER: These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. The views and nutritional advice expressed by CHEWSY are not intended to be a substitute for conventional medical service. If you have a severe medical condition, see your physician of choice. Individual results may vary.</small></p>
+        </div>
+    </footer>
+    
 </body>
+</html>
