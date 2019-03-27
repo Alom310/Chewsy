@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #navbar{
     background-color: #F1959C;
 }
@@ -52,3 +53,105 @@ color: #004d40;
     
 }
 
+=======
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir', sans-serif;
+}
+
+.client-quotes {
+    color: #A3A1A0;
+    text-align: center;
+    background-color:#FFF1F1;
+    padding: 30px 15%;
+}
+
+.client {
+    margin: 20px;
+    text-align: left;
+}
+
+.client-image {
+    max-width: 100%;
+    height: auto
+}
+
+.learn-more {
+    color: #A3A1A0;
+    text-decoration: underline;
+    text-align:center;
+}
+
+footer {
+    text-align: center;
+    background-color: #F1959C;
+    bottom: 0;
+    color: white;
+    padding-bottom: 10em;
+    padding-top: 30px;
+}
+
+footer h4 {
+    color: black;
+    margin: 15px 0;
+}
+
+footer p, small{
+    margin: 0;
+    line-height: 10pt;
+}
+
+#as-seen-in {
+    max-width: 70%;
+    height: auto;
+}
+
+.social {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 5%;
+    height:auto;
+}
+
+#disclaimer {
+    padding-left: 9em;
+    padding-right: 9em;
+    text-align: justify;
+}
+
+@media (max-width: 700px) {
+    .client-quotes {
+        padding-left:0;
+        padding-right:0;
+    }
+    
+    #disclaimer {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+}
+
+@media (max-width: 540px) {
+    .client-quotes .container {
+        padding:0;
+    }
+
+    .client-quotes .container .col-6 {
+        padding-left: 0
+    }
+
+    #as-seen-in {
+        max-width: 90%;
+    }
+
+    .social{
+        max-width: 10%;
+    }
+    
+    #disclaimer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+>>>>>>> 0afd032e2333b0f20b366cfc8ec96f7e518746a8

@@ -10,6 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="main.css">
+    
     <title>Chewsy</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
@@ -180,20 +183,43 @@
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-6">Quote here</div>
-                <div class="col-3"><img src="#" style="height: 339px; width: 219px"></div>
-                <div class="col-3"><img src="#" style="height: 339px; width: 219px"></div>
+    <section class="client-quotes">
+        <h2>Our Clients</h2>
+        <div class="container align-items-center">
+            <div class="row client d-flex align-items-center">
+                <div class="col-6 order-sm-2"><img src="Assets/Khloe.jpg" class="client-image image-fluid"></div>
+                <div class="col-6 order-sm-1">
+                    <p>SURPRISE! I don't work out, I use CHEWSY! JOKES ON YOU GUYS.</p>
+                    <p>&mdash; Khloe Kardashian, 34</p>
+                    <a href="#" class="learn-more"><i>Learn more</i></a>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-3"><img src="#" style="height: 339px; width: 219px"></div>
-                <div class="col-3"><img src="#" style="height: 339px; width: 219px"></div>
-                <div class="col-6">Quote here</div>
+            <div class="row client d-flex align-items-center">
+                <div class="col-6"><img src="Assets/beforeANDafter.jpg" class="client-image image-fluid"></div>
+                <div class="col-6">
+                    <p>CHEWSY is the best thing that ever happened to me! I lost 16lbs in just two weeks!</p>
+                    <p>&mdash; Ali, 28</p>
+                    <a href="#" class="learn-more"><i>Learn more</i></a>
+                </div>
             </div>
         </div>
     </section>
+
+    <footer>
+        <img src="Assets/as_seen_in_v03.png" class="image-fluid" id="as-seen-in" alt="As seen in Cosmopolitan, MarieClaire, and The New York Times">
+        <h4>Sign up for our newsletter</h4>
+        <p>Subscribe to our newsletter and always be the first to hear what is happening.</p>
+        <form>
+            <input type="text" placeholder="Enter your email address">
+            <button class="btn">Submit</button>
+        </form>
+        <a href="https://www.facebook.com"><img src="Assets/facebook.png" class="social image-fluid" alt="Facebook"></a>
+        <a href="https://www.twitter.com"><img src="Assets/twitter.png" class="social image-fluid" alt="Twitter"></a>
+        <a href="https://www.instagram.com"><img src="Assets/instagram.png" class="social image-fluid" alt="Instagram"></a>
+        <div id="disclaimer">
+            <p><small>&copy; 2019 CHEWSY. All rights reserved. *DISCLAIMER: These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. The views and nutritional advice expressed by CHEWSY are not intended to be a substitute for conventional medical service. If you have a severe medical condition, see your physician of choice. Individual results may vary.</small></p>
+        </div>
+    </footer>
     
 </body>
 </html>
