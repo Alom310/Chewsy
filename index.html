@@ -112,14 +112,16 @@
         <h2 id="logoSlogan">Stop being chewsy about food</h2>
     </header>
 
-    <div class="container" >
-        <div class="row">
-            <div class="col" id="headwrap">
-                <div id="SignUpHook">Do you have allergies or food sensitivities? An indefatiguable sweet tooth? An appetite that your waist wishes you would curb? One Chewsy metabolizes anything in your stomach! Take two and you can eat for hours!</div>
-                <button type="button" id="SignUpButton" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Sign Up</button>
+    <div class="container hook-content-box" >
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-5 col-6" id="headwrap">
+                <p class="hook">Do you have allergies or food sensitivities? An indefatiguable sweet tooth? An appetite that your waist wishes you would curb? One Chewsy metabolizes anything in your stomach! Take two and you can eat for hours!</p>
+                <button type="button" id="SignUpButton" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModalCenter">Sign Up for a free sample!</button>
+                <div id="SignUpHook">
+                </div>
             </div>
-            <div class="col">
-                <img src="./Assets/Big_Bottle.png" style="height: 367px; width: 292px">
+            <div class="col-lg-5 col-6 mt-auto">
+                <img src="./Assets/Big_Bottle.png" class="image-fluid big-bottle">
             </div>
         </div>
     </div>    
@@ -160,20 +162,21 @@
     </div>
 
     <section>
-        <h2>Featured Products</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="./Assets/blue_bottle_v002.png" style="height: 142px; width: 142px">
-                    product
+        <div class="products container">
+                <h2>Featured Products</h2>
+            <div class="row justify-content-center">
+                <div class="col-sm col-lg-3">
+                    <img src="./Assets/blue_bottle_v002.png" class="image-fluid product-bottle">
+                    <button type="button" class="btn btn-outline-secondary btn-block">See more</button>
                 </div>
-                <div class="col">
-                    <img src="./Assets/purple_bottle_v002.png" style="height: 142px; width: 142px">
-                    product
+                <div class="col-sm col-lg-3">
+                    <img src="./Assets/purple_bottle_v002.png" class="image-fluid product-bottle">
+                    <button type="button" class="btn btn-outline-secondary btn-block">See more</button>
                 </div>
-                <div class="col">
-                    <img src="./Assets/Pink_bottle_v002.png" style="height: 142px; width: 142px">
-                    product
+                <div class="col-sm col-lg-3">
+                    <img src="./Assets/Pink_bottle_v002.png" class="image-fluid product-bottle">
+                    <button type="button" class="btn btn-outline-secondary btn-block">See more</button>
+
                 </div>
             </div>
         </div>
@@ -205,9 +208,13 @@
         <img src="Assets/as_seen_in_v03.png" class="image-fluid" id="as-seen-in" alt="As seen in Cosmopolitan, MarieClaire, and The New York Times">
         <h4>Sign up for our newsletter</h4>
         <p>Subscribe to our newsletter and always be the first to hear what is happening.</p>
-        <form>
-            <input type="text" placeholder="Enter your email address">
-            <button class="btn">Submit</button>
+        <form class="container signup-bottom">
+            <div class="row justify-content-center form-group">
+                <input class="col-8 col-sm-3 form-control" type="text" placeholder="Enter your email address">
+            </div>
+            <div class="row justify-content-center form-group">
+                <button id="sign-up-bottom" class="col-8 col-sm-3 btn btn-primary btn-block form-control">Sign Up</button>
+            </div>
         </form>
         <a href="https://www.facebook.com"><img src="Assets/facebook.png" class="social image-fluid" alt="Facebook"></a>
         <a href="https://www.twitter.com"><img src="Assets/twitter.png" class="social image-fluid" alt="Twitter"></a>
