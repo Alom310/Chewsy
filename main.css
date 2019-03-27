@@ -13,17 +13,8 @@ font-size: 1.5rem;
 .navbar-toggler.toggler-example {
 cursor: pointer;
 }
-.dark-blue-text {
-color: #0A38F5;
-}
-.dark-pink-text {
-color: #AC003A;
-}
-.dark-amber-text {
-color: #ff6f00;
-}
-.dark-teal-text {
-color: #004d40;
+.dark-black-text {
+color: black;
 }
 
 #smallNavBar{
@@ -193,6 +184,34 @@ a{
     color: black;
 }
 
+.thankyou{
+    font-family: "PT Serif Caption";
+    font-size: 37px;
+    color: #999696;
+    text-align:center;
+}
+
+.thankyou h2 {
+    font-size: 37px;
+}
+
+.thankyou h4 {
+    font-size: 27px;
+}
+
+#menu{
+    margin-top:50px;
+}
+
+#logoheader{
+    width: 244px;
+    height: 45px;
+}
+
+#menutext{
+    text-align: center;
+}
+
 
 
 @media (max-width: 760px){
@@ -245,14 +264,13 @@ a{
     #navList{
         flex-direction: row;
     }
-}
-
 
     .product-bottle{
         max-width: 80%;
     }
     
 }
+
 @media (max-width: 540px) {
     .btn{
         padding: 5px;
